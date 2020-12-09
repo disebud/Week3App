@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detail.DetailDaerahCoronaActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/covid_19"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2222"
+        android:text="DATA PROVINSI"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/daerahCovid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DKI"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#FF2222"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JUMLAH KASUS"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnJlhKasus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        android:backgroundTintMode="multiply"
+        android:text="xxxxxxxx"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:outlineProvider="background"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MENINGGAL"
+                android:textSize="15sp"
+                android:layout_weight="0.33"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEMBUH"
+                android:textSize="15sp"
+                android:layout_weight="0.33"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DIRAWAT"
+                android:layout_weight="0.33"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+
+        </TableRow>
+
+        <TableRow>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMeninggal"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                app:cornerRadius="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:text=" xxxxxx"
+                android:fontFamily="@font/poppins_medium"
+                android:backgroundTint="#FF2222"
+                android:textSize="22sp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSembuh"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                app:cornerRadius="20dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#FF2222"
+                android:text=" xxxxxx"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDirawat"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:backgroundTint="#FF2222"
+                app:cornerRadius="20dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:text=" xxxxxx"
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCloseCorona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="CLOSE"
+        android:fontFamily="@font/poppins_medium"
+        app:backgroundTint="#686868"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:outlineProvider="background"/>
+
+</LinearLayout>

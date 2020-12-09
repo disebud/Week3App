@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+    android:background="#FFFEFE"
+android:orientation="vertical"
+tools:context=".home.HomeDaerah">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="PROVINSI NKRI"
+    android:background="#FF2424"
+    android:textSize="20dp"
+    android:fontFamily="@font/poppins_medium"
+    android:padding="5dp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:textAlignment="center"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/listDaerah"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/item_daerah"/>
+
+<ProgressBar
+    android:id="@+id/progressDaerah"
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+android:orientation="vertical"
+tools:context=".home.HomeMuseum">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="MUSEUM INDONESIA"
+    android:textSize="20dp"
+    android:padding="5dp"
+    android:fontFamily="@font/poppins_medium"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_search"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searcMuseum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:paddingStart="-10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:searchIcon="@drawable/ic_search"
+            android:theme="@style/SearchView"
+            app:queryBackground="@android:color/transparent" />
+
+    </LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/listMuseum"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/items_museum"/>
+
+<ProgressBar
+    android:id="@+id/progressMuseum"
+    android:layout_width="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
